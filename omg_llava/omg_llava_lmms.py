@@ -92,6 +92,7 @@ class OMGLLaVA(lmms):
                 eval_logger.info(f"Using {accelerator.num_processes} devices with data parallelism")
             self._rank = self.accelerator.local_process_index
             self._world_size = self.accelerator.num_processes
+            self.model.to(self._device)
         else:
             self.model.to(self._device)
             self._rank = 0
