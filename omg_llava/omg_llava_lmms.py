@@ -209,7 +209,7 @@ class OMGLLaVA(lmms):
         text_output = self.tokenizer.decode(
             generate_output[0], skip_special_tokens=True).strip()
 
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
 
         return text_output
 
