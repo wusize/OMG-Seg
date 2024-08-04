@@ -25,7 +25,7 @@ from lmms_eval.logging_utils import WandbLogger
 from lmms_eval.utils import PathFormatter
 from lmms_eval.api.registry import MODEL_REGISTRY
 
-from .omg_llava_lmms import OMGLLaVA
+from omg_llava_lmms import OMGLLaVA
 MODEL_REGISTRY['omg'] = OMGLLaVA
 
 
